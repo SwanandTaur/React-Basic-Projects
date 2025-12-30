@@ -1,0 +1,238 @@
+
+#app{
+    width:100vw;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#app nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#app nav h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#app nav ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-weight: 500;
+}
+
+#app nav ul li:hover{
+    color: rgb(55, 55, 190);
+    cursor: pointer;
+}
+
+#app nav button{
+    background-color: #0c0c0c;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    color: #f0f0f0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#app nav button:active{
+    scale: 0.94;
+}
+
+#app .main{
+    height: 80vh;
+    width: 90%;
+    background-image: url(./assets/imgs/tennis.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    color: #f0f0f0;
+    margin-bottom: 3rem;
+}
+
+#app .main h1{
+    width: 70%;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#app .main p{
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+#app .main button{
+    font-size: 1.3rem;
+    background-color: #0c0c0c;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    color: #f0f0f0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+#app .main button:active{
+    scale: 0.94;
+}
+
+#app .about{
+    height: 85vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+#app .about .top{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#app .about .top .head{
+    font-size: 1.1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 0.3rem 1rem;
+    border: 1px solid #0c0c0c;
+    border-radius: 2rem;
+}
+
+#app .about .top .para{
+    font-size: 1.4rem;
+    width: 60%;
+}
+
+#app .about .center{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+#app .about .center .card{
+    width: 33.33%;
+    flex-grow: 1;
+    border-radius: 1rem;
+    padding: 1.2rem;
+}
+
+#app .about .center .card:nth-child(1){
+    font-weight: 600;
+    color: #f0f0f0;
+    background-color: #00010e;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#app .about .center .card:nth-child(1) .gameMode{
+    font-size: 1.4rem;
+    color: gray;
+    font-weight: 700;
+}
+
+#app .about .center .card:nth-child(2){
+    background-image: url(./assets/imgs/private.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    font-size: 1.4rem;
+}
+
+#app .about .center .card:nth-child(2) h4{
+    padding: 0.2rem 0.5rem;
+    background-color: rgba(128, 128, 128, 0.438);
+    backdrop-filter: blur(1px);
+    border-radius: 2rem;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+#app .about .center .card:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.226);
+}
+
+#app .about .center .card:nth-child(3) h1{
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+#app .about .center .card:nth-child(3) h3{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#app .about .center .card:nth-child(3) p{
+    font-size: 0.9rem;
+}
+
+#app .about .center .record{
+    margin-top: 1rem;
+}
+
+#app .about .center .record>div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#app .about .center .record>div h4{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#app .about .center .record>div .count{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#app .about .para{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#app .about .calculations{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#app .about .calculations div .num{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
