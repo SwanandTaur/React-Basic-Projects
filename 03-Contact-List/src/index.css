@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f0f0f0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+form{
+    padding: 1rem;
+}
+
+form input{
+    width: 100%;
+    background-color: rgb(209, 208, 208);
+    border-radius: 0.2rem;
+    padding: 0.3rem 1rem;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    box-shadow: 0 0 5px black;
+    color: #0c0c0c;
+}
+
+form input::placeholder{
+    color: rgb(85, 85, 85);
+    font-weight: 500;
+}
+
+.list{
+    padding: 2rem;
+}
+
+.contact{
+    padding: 0.5rem 1rem;
+}
